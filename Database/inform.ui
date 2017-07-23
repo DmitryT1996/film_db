@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Информация о фильме</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <property name="leftMargin">
@@ -30,8 +30,10 @@
     <widget class="QTextEdit" name="textEdit">
      <property name="font">
       <font>
-       <family>Times New Roman</family>
-       <pointsize>14</pointsize>
+       <family>Arial</family>
+       <pointsize>13</pointsize>
+       <italic>true</italic>
+       <kerning>true</kerning>
       </font>
      </property>
      <property name="styleSheet">

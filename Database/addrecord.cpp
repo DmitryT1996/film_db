@@ -29,10 +29,10 @@ void addrecord::enableFindButton(const QString &)
 void addrecord::on_add_clicked()
 {
     if(ui->radioButton_2->isChecked())
-        lol();
+        add();
     if(ui->radioButton->isChecked())
     {
-        lol();
+        add();
         query = new QSqlQuery("SELECT COUNT(last_insert_rowid()) FROM films");
         query->next();
         int id = query->value(0).toInt();
@@ -45,7 +45,7 @@ void addrecord::on_add_clicked()
 
 }
 
-void addrecord::lol()
+void addrecord::add()
 {
     query = new QSqlQuery();
     QString _name = ui->name->text();
@@ -77,6 +77,7 @@ void addrecord::lol()
             query->bindValue(":producer",ui->producer->text());
             query->exec();
             emit refresh_table();
+            delete query;
             return;
         }
         return;

@@ -1,7 +1,5 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include <QModelIndex>
-#include <QVariant>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -87,8 +85,7 @@ void MainWindow::on_info_clicked()
     QVariant myData_name = ui->tableView->model()->data(MyName);
 
     id = myData_id.toInt();
-    QString lol = myData_name.toString();
 
-    inf->inf(static_cast<int&&> (id), static_cast<QString&&> (lol));
+    inf->inf(static_cast<int&&> (id), static_cast<QString&&> (myData_name.toString()));
     inf->show();
 }

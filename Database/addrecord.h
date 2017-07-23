@@ -15,7 +15,7 @@ class addrecord : public QWidget
 
 public:
     explicit addrecord(QWidget *parent = 0);
-    void lol();
+    void add();
     ~addrecord();
 private slots:
     void enableFindButton(const QString &);

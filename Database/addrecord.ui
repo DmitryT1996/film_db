@@ -181,7 +181,9 @@ QPushButton:pressed {
       <font>
        <family>Times New Roman</family>
        <pointsize>12</pointsize>
+       <weight>50</weight>
        <italic>true</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="text">

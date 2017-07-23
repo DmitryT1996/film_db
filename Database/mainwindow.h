@@ -6,6 +6,8 @@
 #include <QString>
 #include <QSqlTableModel>
 #include <QSqlQuery>
+#include <QModelIndex>
+#include <QVariant>
 #include <addrecord.h>
 #include <ui_addrecord.h>
 #include <inform.h>
